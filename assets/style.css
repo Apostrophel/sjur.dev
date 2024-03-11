@@ -3,7 +3,8 @@
     height:100vh;
     background: url('images/southafrica2.jpg');
     background-size:cover;
-    position:relative;
+    background-attachment: fixed;
+    /* position:relative; */
 }
 /* text css above hero image*/
 .hero_title {
@@ -78,3 +79,50 @@
 #contact {
     padding-bottom: 4rem;
 }
+
+.icon {
+    width:40px; /* Set the width of the icon */
+    height: 40px; /* Set the height of the icon */
+}
+
+.card-icon {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.my_navigation_bar {
+    background-color: #000000;
+    a {
+        color: #008000 !important;
+        /* text-decoration: none !important; */
+    }
+    a:hover {
+        /* background-color: #ff5e5e81; */
+        color: rgb(0, 66, 18) !important;
+      }
+    a:active {
+        /* background-color: rgb(242, 1, 1); */
+        color: red !important;
+      }
+      a:visited {
+        background-color: #ff0000;
+      }
+}
+
+a {
+    color: #008000 !important;
+    /* text-decoration: none !important; */
+}
+a:hover {
+    /* background-color: #ff5e5e81; */
+    color: rgb(0, 66, 18) !important;
+  }
+a:active {
+    /* background-color: rgb(242, 1, 1); */
+    color: red !important;
+  }
+  a:visited {
+    background-color: #ff0000;
+  }
