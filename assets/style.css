@@ -1,7 +1,7 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/southafrica1.jpg');
+    background: url('images/southafrica2.jpg');
     background-size:cover;
     position:relative;
 }
@@ -71,7 +71,7 @@
 }
 
 /* spacing on all sections */
-#about, #services, #portfolio, #skills, #portfolio_personal, #contact {
+#about, #skills, #portfolio, #skills, #portfolio_personal, #contact {
     margin-top: 4rem;
     padding-top: 4rem;
 }

@@ -11,18 +11,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+
 </head>
 
 <body>
     <!--Navigation bar-->
-    <div id="nav-placeholder">
-
-    </div>
-
+    <div id="nav-placeholder"></div>
     <script>
-        $(function(){
-            $("#nav-placeholder").load("nav.html");
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
         });
     </script>
     <!--end of Navigation bar-->
@@ -49,7 +48,12 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                    <p> Hi, my name is Sjur and im a programmer, teacher, geologist and glaciologist. Currently I'm a student at the University 
+                        of Bergen, finishing a degree in ice sheet modelling. I love meeting new people, learning new things and I have a number
+                        of varying interest. As a hobby <a href = "../assets/photography/index.html">photographer</a> I have learnt to develop my own film,
+                        and I have documented my field work and other travels. I also really enjoy <a href = "#personal_projects">filmmaking</a> 
+                        and editing. I often work on my own projects, coding small games. 
+
                         
                     </p>
                     <div class="row mt-3">
@@ -57,23 +61,26 @@
                             <ul>
                                 <li>Name: Sjur B.</li>
                                 <li>Age: 30</li>
-                                <li>Occupation: Master Student</li>
+                                <li>Location: Bergen, Norway</li>
 
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul>
                                 <li>Education: Glaciology...</li>
-                                <li>Year: 2024</li>
-                                <li></li>
+                                <li>Year of Graduation: 2024</li>
+                                <li>Masters Project: link here</li>
 
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
+                        <p> After a bachellor in Computer Engineering, I wanted to 
+                            work, climb and travel before continuing my studies. And that's excactly what i did. In 2018 I took the bullet train
+                            around China, camped in the bushes of Eastern Australia and bouldered for months in Rocklands, South Africa. When I returned
+                            I started a five year combined masters program in geology, mathematics and teaching. My programming background gave me an advantage 
+                            in several aspects of the program, and I eventually chose a thesis with programming in focus: Numerical Modelling of ice sheets.
+                         </p>
                     </div>
                 </div>
             </div>
@@ -81,7 +88,7 @@
 
     
     <!-- skills section-->
-    <section id="services">
+    <section id="skills">
         <div class="container">
             <h1 class="text-center">Skills</h1>
             <div class="row">
