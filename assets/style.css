@@ -1,3 +1,16 @@
+/*theme variables*/
+:root {
+    --primary-theme-color: #008000;
+    --primary-theme-accent: #005204;
+    --primary-theme-dark: #2b362bab;
+    --secondary-theme-color: #d41414;
+    --secondary-theme-accent: #7a0000;
+
+}
+
+
+
+
 /* hero background image */
 .bgimage {
     height:100vh;
@@ -42,10 +55,10 @@
     text-align: center;
 }
 .card:hover .servicesIcon {
-    color: #008000;
+    color: var(--primary-theme-color)
 }
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 1px solid var(--primary-theme-color);
 }
 
 /* display background color black on navbar scroll */
@@ -60,14 +73,14 @@
     cursor: pointer;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
+    color: var(--primary-theme-color);
 }
 .fab {
     color: #000000;
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    background-color: var(--primary-theme-dark);
     text-align: center;
 }
 
@@ -92,37 +105,40 @@
 }
 
 
-.my_navigation_bar {
+/* .my_navigation_bar {
     background-color: #000000;
-    a {
-        color: #008000 !important;
-        /* text-decoration: none !important; */
-    }
-    a:hover {
-        /* background-color: #ff5e5e81; */
-        color: rgb(0, 66, 18) !important;
-      }
-    a:active {
-        /* background-color: rgb(242, 1, 1); */
-        color: red !important;
-      }
-      a:visited {
-        background-color: #ff0000;
-      }
+}
+ */
+a.nav-link {
+    color: var(--primary-theme-color) !important;
+    text-decoration: none !important;
+}
+a.nav-link:hover {
+    color: var(--primary-theme-accent) !important;
+  }
+a.nav-link:active {
+    /* background-color: rgb(242, 1, 1); */
+    color: var(--secondary-theme-color) !important;
 }
 
-a {
-    color: #008000 !important;
-    /* text-decoration: none !important; */
+
+
+a.inline_link{
+    color: var(--primary-theme-color) !important;
+    text-decoration: none !important;
 }
-a:hover {
+a.inline_link:hover {
     /* background-color: #ff5e5e81; */
-    color: rgb(0, 66, 18) !important;
+    color: var(--primary-theme-accent) !important;
+    text-decoration: underline !important
   }
-a:active {
-    /* background-color: rgb(242, 1, 1); */
+a.inline_link:active {
+    /* background-color: var(--primary-theme-dark); */
     color: red !important;
   }
-  a:visited {
-    background-color: #ff0000;
+a.inline_link:visited {
+    /* background-color: #4a684d6e; */
+    color: var(--secondary-theme-accent) !important
   }
+
+     
