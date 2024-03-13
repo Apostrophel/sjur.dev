@@ -26,42 +26,8 @@ body {
   position: relative;
 }
 
-a {
-  color: #d3387b;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-a:hover, a:active, a:focus {
-  color: #d3387b;
-  outline: none;
-}
 
-p {
-  margin-bottom: 30px;
-}
 
-h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
-  font-family: "Varela Round", Arial, sans-serif;
-  font-weight: 400;
-  margin: 0 0 30px 0;
-}
-
-::-webkit-selection {
-  color: #fff;
-  background: #d3387b;
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #d3387b;
-}
-
-::selection {
-  color: #fff;
-  background: #d3387b;
-}
 
 #fh5co-page {
   position: relative;
