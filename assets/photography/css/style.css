@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?6l7lgr");
-  src: url("../fonts/icomoon/icomoon.eot?6l7lgr#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?6l7lgr") format("truetype"), url("../fonts/icomoon/icomoon.woff?6l7lgr") format("woff"), url("../fonts/icomoon/icomoon.svg?6l7lgr#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
 html, body {
   overflow-x: hidden;
 }
@@ -25,9 +12,6 @@ body {
   height: 100%;
   position: relative;
 }
-
-
-
 
 #fh5co-page {
   position: relative;
@@ -59,7 +43,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000 url("../images/img_7.jpg") no-repeat;
+  background: linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 78%, rgba(54,54,54,1) 100%); 
+  background: linear-gradient(140deg, rgb(107, 107, 107) 0%, rgba(0,0,0,1) 50%); 
+  background: linear-gradient(140deg, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 41%, rgb(99, 99, 99) 100%);
   z-index: 1;
 }
 #fh5co-aside > .row {
@@ -116,7 +103,6 @@ body {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -152,13 +138,6 @@ body {
   -ms-transform: scale(0);
   -o-transform: scale(0);
   transform: scale(0);
-  background: #ffffff;
-  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
-  background: -webkit-linear-gradient(left, #ffffff 0%, #f8f8f8 100%);
-  background: -o-linear-gradient(left, #ffffff 0%, #ffffff 100%);
-  background: -ms-linear-gradient(left, #ffffff 0%, #f3f3f3 100%);
-  background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3387b', endColorstr='#8628cd', GradientType=1 );
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -190,7 +169,7 @@ body {
   background: transparent;
 }
 .aside-toggle a:hover em, .back-to-home a:hover em {
-  color: #fff;
+  color: #ffffff;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0);
@@ -266,13 +245,8 @@ body {
   width: 100%;
   z-index: 2;
   vertical-align: middle;
-  background: rgba(211, 56, 123, 0.67);
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.77) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0.77)), color-stop(100%, rgba(255, 255, 255, 0.77)));
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.77) 0%, rgba(254, 254, 255, 0.77) 100%);
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.77) 100%);
-  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.77) 100%);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.77) 100%);
+  /*CHANGE HOVER GRADIENT HERE: */
+  background: linear-gradient(to right, rgba(0, 175, 0, 0.1) 0%, rgba(133, 0, 0, 0.418) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3387b', endColorstr='#8628cd', GradientType=1 );
   opacity: 0;
   visibility: hidden;
@@ -291,7 +265,6 @@ body {
   top: 20px;
   right: 20px;
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -310,7 +283,6 @@ body {
   top: 20px;
   right: 20px;
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -348,31 +320,8 @@ body {
   transform: scale(1.2);
 }
 #fh5co-image-grid .item a:hover .text-wrap {
-  opacity: 1;
+  opacity: 0;
   visibility: visible;
-}
-
-.fh5co-social a {
-  font-size: 26px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-.fh5co-social a:hover {
-  text-decoration: none;
-  color: #fff;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
 }
 
 /* clear fix */
@@ -418,5 +367,3 @@ body {
 .js .animate-box {
   opacity: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
