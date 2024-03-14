@@ -103,6 +103,16 @@
     background-color: black;
 }
 
+.navbarScroll.navbarDark {
+  background-color: rgba(0, 0, 0, 0); 
+  transition: background-color 0.5s ease; /* Add a transition for opacity */
+}
+
+.navbarScroll.navbarDark.show {
+  background-color: rgb(0, 0, 0); 
+}
+
+
 
 /* social media icons styling */
 .social-icons {
@@ -119,7 +129,7 @@
 #footer {
     background-color: var(--primary-theme-dark);
     text-align: center;
-}
+ }
 
 /* spacing on all sections */
 #about, #portfolio_links, #portfolio, #skills, #portfolio_personal, #contact {
@@ -188,8 +198,6 @@ a.inline_link:visited {
 
   .bloginprogress{
     padding-top: 5%;
-
-    
   }
 
 .overlay {
@@ -225,27 +233,24 @@ a.inline_link:visited {
 }
 
 
- /* (A) GALLERY WRAPPER */
+ /* GALLERY WRAPPER */
 .gallery {
-    /* (A1) GRID LAYOUT - 3 IMAGES PER ROW */
+    /* GRID LAYOUT - 4 IMAGES PER ROW */
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-gap: 0px;
-  
-    /* (A2) OPTIONAL WIDTH RESTRICT */
-    
-    margin: 0 auto;
+    grid-gap: 0px;  
+    margin-top: 10 auto;
     overflow: hidden;
   }
   
-  /* (B) GALLERY IMAGES */
+  /* GALLERY IMAGES */
   .gallery img {
-    /* (B1) DIMENSION */
+    /*DIMENSION */
     width: 100%;
     height: 100%;  
     padding: 0px;
   
-    /* (B2) COLORS */
+    /* COLORS */
     border: 0px solid #000000;
     background: #000000;
   
@@ -254,44 +259,52 @@ a.inline_link:visited {
     object-fit: cover;
   }
   
-  /* (C) ON SMALL SCREENS - 2 IMAGES PER ROW */
+  /* SMALL SCREENS - 2 IMAGES PER ROW */
   @media only screen and (max-width: 600px) {
     .gallery{
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   
-  /* (D) OPTIONAL ZOOM ON HOVER */
-  .gallery img:hover {
+/* OPTIONAL ZOOM ON HOVER (Exclude Fullscreen Images) */
+.gallery img:not(.full):hover {
     z-index: 9;
-    transform: scale(1.3);
-    /* linear | ease | ease-in | ease-out | ease-in-out */
-    transition: transform ease 0.5s;
-  }
-  
-  /* (E) FULLSCREEN MODE */
-  .gallery img.full {
+    transform: scale(1.2);
+        /* linear | ease | ease-in | ease-out | ease-in-out */
+    transition: transform ease 0.8s;
+}
+
+/* (E) FULLSCREEN MODE */
+.gallery img.full {
     position: fixed;
-    top: 0; left: 0; z-index: 999;
-    width: 100vw; height: 100%;
+    top: 50px; 
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100%;
     object-fit: contain;
     background: rgba(0, 0, 0, 0.7);
-  }
-  .gallery img.full:hover {
+    backdrop-filter: blur(5px); /* Adjust the blur strength as needed */
+    transition: ease 0.5s;
+}
+
+.gallery img.full:hover {
     z-index: 999;
     transform: none;
-  }
-   
+    transition: none; /* Disable transition on hover for fullscreen images */
+}
+
   #cbwrap{
-    background:rgba(255,255,255,.9);
+    background:rgb(5, 5, 5);
     width:100%;
     padding:0px;
+    margin-top: 55px;
     border-radius:0px
 }
 
  
 
-  body{
+  #image-gallery{
     padding:0;
     margin:0;
     border:0;
@@ -301,6 +314,7 @@ a.inline_link:visited {
     align-items:center;
     background-size:cover;
     background-position:center;
+    background-color: #000000;
    
 }
  

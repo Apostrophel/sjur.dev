@@ -24,29 +24,32 @@ function loadFooter() {
         })
         .catch(error => console.error('Error fetching included content:', error));
 
-    fetch('/assets/common/navigation.html')
+        fetch('/assets/common/navigation.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('myNavigationBar').innerHTML = html;    
-            // add class navbarDark on navbar scroll
+            // Add class navbarDark on navbar scroll
             const header = document.querySelector('.navbar');
-
-            window.onscroll = function() {
+            var isNavbarDark = false;
+    
+            window.addEventListener('scroll', function() {
                 var top = window.scrollY;
-                if(top >=100) {
-                    header.classList.add('navbarDark');
+                if (top >= 100 && !isNavbarDark) {
+                    header.classList.add('navbarDark', 'show');
+                    isNavbarDark = true;
+                } else if (top < 100 && isNavbarDark) {
+                    header.classList.remove('show');
+                    isNavbarDark = false;
                 }
-                else {
-                    header.classList.remove('navbarDark');
-                }
-            }
+            });
         })
         .catch(error => console.error('Error fetching included content:', error));
 }
+
+
 
 window.addEventListener("load", () => {
     for (let i of document.querySelectorAll(".gallery img")) {
       i.onclick = () => i.classList.toggle("full");
     }
   });
-

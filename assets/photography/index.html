@@ -11,14 +11,36 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- font awesome -->
 	<script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+	    <!-- Override navbarScroll.navbarDark behavior -->
+		<style>
+			.navbarScroll.navbarDark {
+				background-color: black !important;
+ 
+			}
+			.navbarScroll.navbarDark.show {
+				background-color: black !important;
+			}
+			.navbar{
+				.gallery-nav{
+					background-color: black !important;
+				}
+				.nav{
+					background-color: black !important;
+				}
+			}
+
+			#footer{
+				background-color: rgb(145, 145, 145) /*var(--primary-theme-accent);*/
+			}
+		</style>
 </head>
 
-<body onload="loadFooter()">
+<body id="image-gallery" onload="loadFooter()">
 	<!-- navigation bar-->
-	<div id="myNavigationBar"></div>
+	<div id="myNavigationBar" class="gallery-nav"></div>
 
 	<div id="cbwrap">
-		<!-- (A) GALLERY -->
+		<!-- GALLERY -->	
 		<div class="gallery">
 			<img src="/assets/photography/images/IlfordHP5_8001.jpg"/>
 			<img src="/assets/photography/images/IlfordHP5_8002.jpg"/>
@@ -62,10 +84,8 @@
 			<img src="/assets/photography/images/IlfordHP5_8034.jpg"/>
 			<img src="/assets/photography/images/IlfordHP5_8035.jpg"/>
 			<img src="/assets/photography/images/IlfordHP5_8036.jpg"/>
-			<img src="/assets/photography/images/IlfordHP5_8001.jpg"/>
-			<img src="/assets/photography/images/IlfordHP5_8011.jpg"/>
-			<img src="/assets/photography/images/IlfordHP5_8012.jpg"/>
 		  </div>
+
 	<!-- footer section-->
     <div id="footerSection"></div>
   
