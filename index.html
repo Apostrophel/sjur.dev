@@ -1,3 +1,11 @@
+<!--Main index of the sjur.dev site
+    Project inspired by Sampurna Chapagain @ feeCodeCamp.org : https://www.freecodecamp.org/news/how-to-create-a-portfolio-website-using-html-css-javascript-and-bootstrap/
+    
+    and the photography template: 
+
+    © 2024 Sjur Barndon <sjurbarndon@proton.me> 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,40 +21,10 @@
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="loadFooter()">
 
     <!-- navigation bar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-    <div class="container">
-        <a class="nav-link" href="/#">sjur b.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/assets/projects/index.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/assets/photography/index.html">Photography</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/assets/blog/index.html">Climbing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/#contact">Contact</a>
-                </li>
-            </ul>
-            
-        </div>
-    </div>
-</nav>
+    <div id="myNavigationBar"></div>
 
      <!-- main banner -->
      <section class="bgimage" id="home">
@@ -211,10 +189,11 @@
                         <div class="card-body">
                             <h4 class="card-title">Climbing</h4>
                             <p class="card-text">An old blog that I did with my friend Marie. We traveled, 
-                                climbed, took photos and wrote about it.
+                                climbed, took photos and wrote about it. Im planning to port and preserve the 
+                                blog here, currently it is just a snapshot as a preview.
                             </p>
                             <div class="text-center">
-                                <a href="/assets/blog/index.html" class="btn btn-success">See</a>
+                                <a href="/assets/blog/index.html" class="btn btn-success">Preview</a>
                             </div>
                         </div>
                     </div>
@@ -234,32 +213,21 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <p> Feel free to contact me! </p>
+                    <p> Feel free to contact me any way you like: </p>
                     <div class="row mt-3">
                         <div class="col-md-6">
                             <ul>
-                                <li>Contact: <a class="inline_link" href = "mailto: contact@sjur.dev">Send me an email!</a></li>
-                                <li>Whatsapp: <a class="inline_link" href="https://wa.me/4793204248?text=Hello%20from%20your%20portfolio%20web%20site!"> Text me!</a></li>
+                                <li>Email: <a class="inline_link" href = "mailto: contact@sjur.dev">Write me!</a></li>
+                                <li>Whatsapp: <a class="inline_link" href="https://wa.me/4793204248?text=Hello,%20I%20found%20you%20on%20sjur.dev!"> Text me!</a></li>
                             </ul>
                         </div>
                     </div>
     </section>
 
-     <!-- footer section-->
-     <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <!--<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> -->
-                <!--<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> -->
-                <!--<a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> -->
-                <a href="https://www.linkedin.com/in/sjur-barndon-3a8672240" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-            </div>
-        </div>
-    </footer>
-
+    <!-- footer section-->
+    <div id="footerSection"></div>
+  
     <!-- load javascript after loading all html content -->
-    <script src="scripts/script.js"></script>
+    <script src="/assets/scripts/script.js"></script>
 </body>
-</html>
+</html> 

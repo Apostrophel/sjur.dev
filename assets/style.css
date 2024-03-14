@@ -1,10 +1,15 @@
 /*theme variables*/
 :root {
+
+    /*default theme green/red*/
     --primary-theme-color: #008000;
     --primary-theme-accent: #005204;
     --primary-theme-dark: #2b362bab;
     --secondary-theme-color: #d41414;
     --secondary-theme-accent: #7a0000;
+    --secondary-theme-dark: #2e0000;
+
+
 
 }
 
@@ -27,15 +32,43 @@
     /* position:relative; */
 }
 
-/* hero background image */
-.bgimage_thesis {
+/* thesis hero background image */
+.bgimage_thesis{
     height:100vh;
-    background: url('/assets/projects/master/img/swirl.png');
+    background: url('/assets/projects/master/img/vafjorden_from_n2.jpg');
     background-size:cover;
     background-attachment: fixed;
-    /* position:relative; */
+    position:relative;
+    max-width: 100%; 
+    overflow: hidden;
+    z-index: 1;
+
+    p{
+        color: var(--primary-theme-accent);
+    }
+}
+.bgimage_thesis_overlay {
+    height:100vh;
+    background: url('/assets/projects/master/img/vafjorden_from_n2_overlay.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add transition for smooth fade */
+    z-index: 0;
 }
 
+.underlay{
+    background-size:cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index: -99;
+
+}
+
+  
 
 /* text css above hero image*/
 .hero_title {
@@ -90,7 +123,7 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+.fa-linkedin:hover, .fa-discord:hover, .fa-whatsapp:hover, .fa-envelope:hover {
     color: var(--primary-theme-color);
 }
 .fab {
@@ -109,6 +142,13 @@
 }
 #contact {
     padding-bottom: 4rem;
+}
+
+#mapembed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .icon {
@@ -159,4 +199,41 @@ a.inline_link:visited {
     color: var(--secondary-theme-accent) !important
   }
 
-     
+
+  .bloginprogress{
+    padding-top: 5%;
+
+    
+  }
+
+.overlay {
+    display: none; /* Hide the overlay by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-theme-dark);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 9999; /* Ensure it appears above other elements */
+    
+  }
+
+  .fade-out {
+    transition: opacity 3s; /* Add a transition for opacity property with 3 seconds duration */
+    opacity: 0; /* Start with 0 opacity */
+  }
+   
+.blogbody{
+    background-color: #F0F4F5;
+}
+
+.remove-button-style{
+    background: none;
+    color: inherit;
+    padding: 0;
+    border: none;
+    cursor: no-drop;
+    outline: inherit;
+}
