@@ -26,3 +26,11 @@ function showOverlay() {
         overlay.classList.add('fade-out');
   }
 
+function loadFooter() {
+    fetch('/assets/common/footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footerSection').innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching included content:', error));
+}
