@@ -25,15 +25,43 @@
     /* position:relative; */
 }
 
-/* hero background image */
-.bgimage_thesis {
+/* thesis hero background image */
+.bgimage_thesis{
     height:100vh;
-    background: url('/assets/projects/master/img/swirl.png');
+    background: url('/assets/projects/master/img/vafjorden_from_n2.jpg');
     background-size:cover;
     background-attachment: fixed;
-    /* position:relative; */
+    position:relative;
+    max-width: 100%; 
+    overflow: hidden;
+    z-index: 1;
+
+    p{
+        color: var(--primary-theme-accent);
+    }
+}
+.bgimage_thesis_overlay {
+    height:100vh;
+    background: url('/assets/projects/master/img/vafjorden_from_n2_overlay.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add transition for smooth fade */
+    z-index: 0;
 }
 
+.underlay{
+    background-size:cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index: -99;
+
+}
+
+  
 
 /* text css above hero image*/
 .hero_title {
@@ -107,6 +135,13 @@
 }
 #contact {
     padding-bottom: 4rem;
+}
+
+#mapembed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .icon {
