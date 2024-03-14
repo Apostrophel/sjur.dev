@@ -8,12 +8,7 @@
     --secondary-theme-color: #d41414;
     --secondary-theme-accent: #7a0000;
     --secondary-theme-dark: #2e0000;
-
-
-
 }
-
-
 
 
 /* hero background image */
@@ -60,8 +55,6 @@
     z-index: -99;
 
 }
-
-  
 
 /* text css above hero image*/
 .hero_title {
@@ -230,3 +223,6 @@ a.inline_link:visited {
     cursor: no-drop;
     outline: inherit;
 }
+
+
+ 

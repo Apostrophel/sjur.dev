@@ -27,7 +27,7 @@ function loadFooter() {
     fetch('/assets/common/navigation.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('myNavigationBar').innerHTML = html;
+            document.getElementById('myNavigationBar').innerHTML = html;    
             // add class navbarDark on navbar scroll
             const header = document.querySelector('.navbar');
 
@@ -42,8 +42,6 @@ function loadFooter() {
             }
         })
         .catch(error => console.error('Error fetching included content:', error));
-
-           
 }
 
 
