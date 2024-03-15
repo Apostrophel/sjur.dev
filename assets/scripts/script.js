@@ -66,7 +66,7 @@ const content = document.querySelector('.gallery');
 // Toggle panel
 togglePanelButton.addEventListener('click', () => {
   // Check if the panel is currently closed
-  const isClosed = sidePanel.style.left === '-600px';
+  const isClosed = sidePanel.style.left === '-40%';
   
   // Toggle the panel state
   if (isClosed) {

@@ -1,3 +1,10 @@
+/*
+    Contains all style elements for the pages of the portfolio site
+    © 2024 Sjur Barndon <sjurbarndon@proton.me> 
+*/
+
+
+
 /*theme variables*/
 :root {
 
@@ -113,10 +120,9 @@
 }
 
 
-
 /* social media icons styling */
 .social-icons {
-    font-size: 36px;
+    font-size: 28px;
     cursor: pointer;
 }
 .fa-linkedin:hover, .fa-discord:hover, .fa-whatsapp:hover, .fa-envelope:hover {
@@ -148,7 +154,7 @@
 }
 
 .icon {
-    width:40px; /* Set the width of the icon */
+    width: 40px; /* Set the width of the icon */
     height: 40px; /* Set the height of the icon */
 }
 
@@ -245,13 +251,15 @@ a.inline_link:visited {
     grid-gap: 0px;  
     margin-top: 10 auto;
     overflow: hidden;
-    transition: margin-left ease 0.3s;
+    transition: grid-template-columns ease 0.7s;
+    transition: margin-left ease 0.7s;
   }
 
 .gallery-pushed{
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    margin-left: 600px !important;
-    transition: margin-left ease 0.3s;
+    margin-left: 40% !important;
+    transition: grid-template-columns ease 1s;
+    transition: margin-left ease 1s;
 }
   
   /* GALLERY IMAGES */
@@ -296,7 +304,7 @@ a.inline_link:visited {
     width: 100vw;
     height: 100%;
     object-fit: contain;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px); /* Adjust the blur strength as needed */
     transition: ease 0.5s;
 }
@@ -345,10 +353,7 @@ a.inline_link:visited {
         position: fixed;
         bottom: 5%;
         left: 5%;
-        transition: left 0.3s ease; /* Slide animation */
-
-
-
+        transition: left 0.5s ease; /* Slide animation */
         z-index: 890; /* Ensure it's on top of other content */
     }
 
@@ -373,37 +378,39 @@ button.roundButton:active{
 }
 
   .toggleButtonToggled{
-        left: 650px !important;
-        transition: left 0.3s ease; /* Slide animation */
+        left: 45% !important;
+        transition: left 0.5s ease; /* Slide animation */
     }
   
   /* Side panel styles */
   #sidePanel {
     position: fixed;
     top: 0;
-    left: -600px; /* Start off-screen */
-    width: 600px;
+    left: -40%; /* Start off-screen */
+    width: 40%;
     height: 100%;
     background-color: #000000;
-    transition: left 0.3s ease; /* Slide animation */
+    transition: left 0.5s ease; /* Slide animation */
+    overflow-x: hidden;
+    overflow-y: auto;
     z-index: 890; /* Ensure it's on top of other content */
   }
 
   #sidePanel h2{
     padding:  10%;
     font-size: xx-large;
-    color: #fff;
+    color: #fff; 
     }
 
   #sidePanel p{
     padding:  5%;
-    color: white;
+    color: white; 
   }  
 
 
   .sidePanelToggled{
     left: 0px !important;
-    transition: left 0.3s ease; /* Slide animation */
+    transition: left 0.5s ease; /* Slide animation */
   }
   
  
