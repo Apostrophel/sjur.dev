@@ -201,6 +201,12 @@ a.inline_link:visited {
     color: var(--secondary-theme-accent) !important
   }
 
+i.icon-override{
+    color: black !important;
+}
+i.icon-override:hover{
+    color: var(--primary-theme-color) !important;
+}
 
   .bloginprogress{
     padding-top: 5%;
