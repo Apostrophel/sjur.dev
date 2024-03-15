@@ -232,8 +232,12 @@ a.inline_link:visited {
     outline: inherit;
 }
 
+ /*****************/
+ /* IMAGE GALLERY */
+ /*****************/
 
- /* GALLERY WRAPPER */
+
+
 .gallery {
     /* GRID LAYOUT - 4 IMAGES PER ROW */
     display: grid;
@@ -241,7 +245,14 @@ a.inline_link:visited {
     grid-gap: 0px;  
     margin-top: 10 auto;
     overflow: hidden;
+    transition: margin-left ease 0.3s;
   }
+
+.gallery-pushed{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    margin-left: 600px !important;
+    transition: margin-left ease 0.3s;
+}
   
   /* GALLERY IMAGES */
   .gallery img {
@@ -257,6 +268,8 @@ a.inline_link:visited {
     /* (B3) IMAGE RESIZE */
     /* cover | contain | fill | scale-down */
     object-fit: cover;
+
+    z-index: 10;
   }
   
   /* SMALL SCREENS - 2 IMAGES PER ROW */
@@ -271,7 +284,7 @@ a.inline_link:visited {
     z-index: 9;
     transform: scale(1.2);
         /* linear | ease | ease-in | ease-out | ease-in-out */
-    transition: transform ease 0.8s;
+    transition: transform ease 1.2s;
 }
 
 /* (E) FULLSCREEN MODE */
@@ -279,7 +292,7 @@ a.inline_link:visited {
     position: fixed;
     top: 50px; 
     left: 0;
-    z-index: 999;
+    z-index: 900;
     width: 100vw;
     height: 100%;
     object-fit: contain;
@@ -289,7 +302,6 @@ a.inline_link:visited {
 }
 
 .gallery img.full:hover {
-    z-index: 999;
     transform: none;
     transition: none; /* Disable transition on hover for fullscreen images */
 }
@@ -301,8 +313,6 @@ a.inline_link:visited {
     margin-top: 55px;
     border-radius:0px
 }
-
- 
 
   #image-gallery{
     padding:0;
@@ -329,3 +339,80 @@ a.inline_link:visited {
     padding:0px;
     color:#fff;
     background:#a91616}
+
+    /* Button styles */
+    #togglePanelButton {
+        position: fixed;
+        bottom: 5%;
+        left: 5%;
+        transition: left 0.3s ease; /* Slide animation */
+
+
+
+        z-index: 890; /* Ensure it's on top of other content */
+    }
+
+
+button.roundButton{
+        /*Look :*/
+        box-shadow: none;
+        text-decoration: none;
+        text-shadow: none;
+        background-color: var(--primary-theme-color);
+        color: white;
+        border: none;
+	    padding: 5px;
+        border-radius: 50%;
+        height: 84px;
+}
+button.roundButton:hover{
+    background-color: var(--primary-theme-accent);
+}
+button.roundButton:active{
+    background-color: var(--secondary-theme-accent);
+}
+
+  .toggleButtonToggled{
+        left: 650px !important;
+        transition: left 0.3s ease; /* Slide animation */
+    }
+  
+  /* Side panel styles */
+  #sidePanel {
+    position: fixed;
+    top: 0;
+    left: -600px; /* Start off-screen */
+    width: 600px;
+    height: 100%;
+    background-color: #000000;
+    transition: left 0.3s ease; /* Slide animation */
+    z-index: 890; /* Ensure it's on top of other content */
+  }
+
+  #sidePanel h2{
+    padding:  10%;
+    font-size: xx-large;
+    color: #fff;
+    }
+
+  #sidePanel p{
+    padding:  5%;
+    color: white;
+  }  
+
+
+  .sidePanelToggled{
+    left: 0px !important;
+    transition: left 0.3s ease; /* Slide animation */
+  }
+  
+ 
+  /* Main content styles */
+/* .gallerycontent {
+    margin-left: 600;  
+    transition: margin-left 0.3s ease; 
+*/
+    
+ /*********************/
+ /* END IMAGE GALLERY */
+ /*********************/
