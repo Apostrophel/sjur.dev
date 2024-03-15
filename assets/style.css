@@ -397,7 +397,8 @@ button.roundButton:active{
   }
 
   #sidePanel h2{
-    padding:  10%;
+    padding:  5%;
+    margin-top: 10%;
     font-size: xx-large;
     color: #fff; 
     }
