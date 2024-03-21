@@ -82,3 +82,18 @@ togglePanelButton.addEventListener('click', () => {
     togglePanelButton.classList.toggle("toggleButtonToggled")
   }
 });
+
+
+//for master thesis scroll 
+document.getElementById('domain_display').innerHTML = html;    
+  // Add class navbarDark on navbar scroll
+  const header = document.querySelector('.banner');
+     
+  window.addEventListener('scroll', function() {
+    var top = window.scrollY;
+    if (top >= 500) {
+      header.classList.add('scrollup');
+    } else if (top < 500) {
+      header.classList.remove('scrollup');
+     }
+  });
