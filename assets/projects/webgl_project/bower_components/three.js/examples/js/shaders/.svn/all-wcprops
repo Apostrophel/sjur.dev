@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders
+END
+TechnicolorShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/TechnicolorShader.js
+END
+BlendShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/BlendShader.js
+END
+TriangleBlurShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/TriangleBlurShader.js
+END
+BasicShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/BasicShader.js
+END
+SSAOShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/SSAOShader.js
+END
+OceanShaders.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/OceanShaders.js
+END
+HueSaturationShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/HueSaturationShader.js
+END
+DigitalGlitch.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/DigitalGlitch.js
+END
+BokehShader2.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/BokehShader2.js
+END
+KaleidoShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/KaleidoShader.js
+END
+DOFMipMapShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/DOFMipMapShader.js
+END
+HorizontalTiltShiftShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/HorizontalTiltShiftShader.js
+END
+LuminosityShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/LuminosityShader.js
+END
+MirrorShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/MirrorShader.js
+END
+EdgeShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/EdgeShader.js
+END
+VerticalBlurShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/VerticalBlurShader.js
+END
+ColorifyShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/ColorifyShader.js
+END
+ConvolutionShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/ConvolutionShader.js
+END
+FocusShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/FocusShader.js
+END
+CopyShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/CopyShader.js
+END
+NormalMapShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/NormalMapShader.js
+END
+RGBShiftShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/RGBShiftShader.js
+END
+BrightnessContrastShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/BrightnessContrastShader.js
+END
+FXAAShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/FXAAShader.js
+END
+VerticalTiltShiftShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/VerticalTiltShiftShader.js
+END
+EdgeShader2.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/EdgeShader2.js
+END
+HorizontalBlurShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/HorizontalBlurShader.js
+END
+ToneMapShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/ToneMapShader.js
+END
+GammaCorrectionShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/GammaCorrectionShader.js
+END
+UnpackDepthRGBAShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/UnpackDepthRGBAShader.js
+END
+FilmShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/FilmShader.js
+END
+BokehShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/BokehShader.js
+END
+ColorCorrectionShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/ColorCorrectionShader.js
+END
+FresnelShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/FresnelShader.js
+END
+VignetteShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/VignetteShader.js
+END
+ParallaxShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/ParallaxShader.js
+END
+SepiaShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/SepiaShader.js
+END
+DotScreenShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/DotScreenShader.js
+END
+BleachBypassShader.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/shaders/BleachBypassShader.js
+END

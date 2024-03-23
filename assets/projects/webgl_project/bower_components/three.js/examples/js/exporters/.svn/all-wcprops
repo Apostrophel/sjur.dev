@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/exporters
+END
+STLBinaryExporter.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/exporters/STLBinaryExporter.js
+END
+TypedGeometryExporter.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/exporters/TypedGeometryExporter.js
+END
+STLExporter.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/exporters/STLExporter.js
+END
+OBJExporter.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/exporters/OBJExporter.js
+END

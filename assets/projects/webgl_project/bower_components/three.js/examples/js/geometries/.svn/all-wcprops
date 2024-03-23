@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/geometries
+END
+TeapotBufferGeometry.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/geometries/TeapotBufferGeometry.js
+END
+hilbert2D.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/geometries/hilbert2D.js
+END
+hilbert3D.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/geometries/hilbert3D.js
+END
+DecalGeometry.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/geometries/DecalGeometry.js
+END
+ConvexGeometry.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/threejsgame/!svn/ver/5/ThreejsGame/bower_components/three.js/examples/js/geometries/ConvexGeometry.js
+END
