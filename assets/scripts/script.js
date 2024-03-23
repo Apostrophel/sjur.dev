@@ -25,7 +25,7 @@ function loadFooter() {
         })
         .catch(error => console.error('Error fetching included content:', error));
 
-    fetch('/assets/common/navigation.html')
+        fetch('/assets/common/navigation.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('myNavigationBar').innerHTML = html;    
@@ -93,30 +93,4 @@ togglePanelButton.addEventListener('click', () => {
 
 
 //for master thesis scroll 
-document.getElementById('domain_display').innerHTML = html;    
-  // Add class navbarDark on navbar scroll
-  const header = document.querySelector('.banner');
-     
-  window.addEventListener('scroll', function() {
-    var top = window.scrollY;
-    if (top >= 500) {
-      header.classList.add('scrollup');
-    } else if (top < 500) {
-      header.classList.remove('scrollup');
-     }
-  });
-
-
-  function icon_hover_animation(element, enter, leave){
-    element.addEventListener('mouseenter', enter)
-    element.addEventListener('mouseleave', leave)
-  }
-
-
-  icon_hover_animation(document.querySelector('.icon'), e => {
-    // On hover
-    e.target.classList.add("logo__container--hover")
-  }, e => {
-    // On exit hover
-    e.target.classList.remove("logo__container--hover")
-  })
+ 
