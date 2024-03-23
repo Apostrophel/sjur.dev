@@ -261,25 +261,25 @@ function init() {
     //SNOW PARTICLES TEST
     var particles = new THREE.Geometry;
     var particleTexture = THREE.ImageUtils.loadTexture('img/particles/snowflakePin.png');
-    var particleMaterial = new THREE.ParticleBasicMaterial({ map: particleTexture, transparent: true, size: 5 });
+    var particleMaterial = new THREE.PointsMaterial({ map: particleTexture, transparent: true, size: 5 });
     //randomize position of pushed particles:
     for (var p = 0; p < 10000; p++) {
         var particle = new THREE.Vector3(Math.random() * 5000 - 2500, Math.random() * 5000 - 2500, Math.random() * 5000 - 2500);
         particles.vertices.push(particle);
     }
-    particleSystem = new THREE.ParticleSystem(particles, particleMaterial);
+    particleSystem = new THREE.Points(particles, particleMaterial);
     scene.add(particleSystem);
 
     //BUBBLE PARTICLES
     var bubbles = new THREE.Geometry;
     var bubbleTexture = THREE.ImageUtils.loadTexture('img/particles/bubble1.png');
-    var bubbleMaterial = new THREE.ParticleBasicMaterial({ map: bubbleTexture, transparent: true, size: 1});
+    var bubbleMaterial = new THREE.PointsMaterial({ map: bubbleTexture, transparent: true, size: 1});
     //randomize position of pushed particles:
     for (var b = 0; b < 100000; b++) {
         var bubble = new THREE.Vector3(Math.random() * 5000 - 2500, Math.random() * 90 - 25, Math.random() * 5000 - 2500);
         bubbles.vertices.push(bubble);
     }
-    var bubbleSystem = new THREE.ParticleSystem(bubbles, bubbleMaterial);
+    var bubbleSystem = new THREE.Points(bubbles, bubbleMaterial);
     scene.add(bubbleSystem);
 
     render();

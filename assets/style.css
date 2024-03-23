@@ -21,7 +21,7 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/southafrica2.jpg');
+    background: url('/assets/photography/images/new/thumbnailsjurdev-90.jpg');
     background-size:cover;
     background-attachment: fixed;
     /* position:relative; */
@@ -99,6 +99,16 @@
     z-index: 2;
 }
 
+.bgimage_projects {
+  height: 400px;
+  background: url('/assets/photography/images/new/thumbnailsjurdev-87.jpg'); /* Adjust the URL accordingly */
+  background-attachment: fixed;
+  background-position: center bottom 150px; /* Center horizontally and shift down by 100 pixels */
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-repeat: no-repeat; /* Prevent repetition of the background image */
+  position: relative;
+}
+
 .underlay{
     background-size:cover;
     background-attachment: fixed;
@@ -109,9 +119,15 @@
 
 /* text css above hero image*/
 .hero_title {
-    font-size: 4.5rem;
-    color: black;
+  font-size: 4.5rem;
+  color: black;
 }
+.portfolio-title {
+  font-size: 4.5rem;
+  color: black; 
+
+}
+
 .hero_desc {
     font-size: 2rem;
 }

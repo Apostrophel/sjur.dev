@@ -1,109 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Three.js test</title>
+    <title>Sjur B. | Developer</title>
+    <meta charset="UTF-8"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  
+
     <style>
         body {
             margin: 0;
         }
 
         canvas {
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            height: 50%;
         }
 
     </style>
 
 </head>
-<body>
+<body onload="loadFooter()">
+     <!-- navigation bar-->
+     <div id="myNavigationBar" ></div>
 
-<script id="groundVertexShader" type="x-shader/x-fragment">
-    varying vec2 vUv;
-    varying vec3 vPosition;
-    uniform float textureScale;
-    varying float cameraDistance;
-    void main( void ) {
-        vec4 cameraPosInViewCords= vec4(0,0,0,1);
-        vUv = uv* textureScale;
-        vPosition = position;
-        cameraDistance = distance(modelViewMatrix * vec4(vPosition,1),cameraPosInViewCords);
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(vPosition, 1);
-    }
-</script>
+    <script id="groundVertexShader" type="x-shader/x-fragment">
+        varying vec2 vUv;
+        varying vec3 vPosition;
+        uniform float textureScale;
+        varying float cameraDistance;
+        void main( void ) {
+            vec4 cameraPosInViewCords= vec4(0,0,0,1);
+            vUv = uv* textureScale;
+            vPosition = position;
+            cameraDistance = distance(modelViewMatrix * vec4(vPosition,1),cameraPosInViewCords);
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(vPosition, 1);
+        }
+    </script>
 
-<script id="groundFragmentShader" type="x-shader/x-vertex">
-    uniform sampler2D texture_grass;
-    uniform sampler2D texture_rock;
-    uniform sampler2D texture_snow;
+    <script id="groundFragmentShader" type="x-shader/x-vertex">
+        uniform sampler2D texture_grass;
+        uniform sampler2D texture_rock;
+        uniform sampler2D texture_snow;
 
-    varying vec2 vUv;
-    varying vec3 vPosition;
-    varying float cameraDistance;
-    uniform float sandLow;
-    uniform float sandHigh;
-    //uniform float grassLow;
-    //uniform float grassHigh;
-    uniform float rockLow;
-    uniform float rockHigh;
-    uniform float snowLow;
-    uniform float snowHigh;
+        varying vec2 vUv;
+        varying vec3 vPosition;
+        varying float cameraDistance;
+        uniform float sandLow;
+        uniform float sandHigh;
+        //uniform float grassLow;
+        //uniform float grassHigh;
+        uniform float rockLow;
+        uniform float rockHigh;
+        uniform float snowLow;
+        uniform float snowHigh;
 
-    uniform vec3 fogColor;
-    uniform float fogConst;
+        uniform vec3 fogColor;
+        uniform float fogConst;
 
-    void main() {
-       // Texture loading
-       vec4 diffuseGrass = texture2D( texture_grass, vUv );
-       //vec4 diffuseGrass = vec4(.2, .8, .2, 1.0);
+        void main() {
+        // Texture loading
+        vec4 diffuseGrass = texture2D( texture_grass, vUv );
+        //vec4 diffuseGrass = vec4(.2, .8, .2, 1.0);
 
-       vec4 diffuseSand = vec4(.8, .8, .7, 1.0);
+        vec4 diffuseSand = vec4(.8, .8, .7, 1.0);
 
-       vec4 diffuseRock = texture2D( texture_rock, vUv );
-       //vec4 diffuseRock = vec4(.9, .1, 0.1, 1.0);
+        vec4 diffuseRock = texture2D( texture_rock, vUv );
+        //vec4 diffuseRock = vec4(.9, .1, 0.1, 1.0);
 
-       vec4 diffuseSnow = texture2D( texture_snow, vUv );
-       //vec4 diffuseSnow = vec4(.8, .9, 1.0, 1.0);
+        vec4 diffuseSnow = texture2D( texture_snow, vUv );
+        //vec4 diffuseSnow = vec4(.8, .9, 1.0, 1.0);
 
-       vec4 color = diffuseGrass; // grass base
+        vec4 color = diffuseGrass; // grass base
 
-       // add sand
-        color = mix(
-            diffuseSand,
-            color,
-            min(abs(sandLow - vPosition.z) / sandHigh, 1.0)
-        );
-        // add rock
-        color = mix(
-            diffuseRock,
-            color,
-            min(abs(rockLow - vPosition.z) / rockHigh, 1.0)
-        );
-        // add snow
-        color = mix(
-            diffuseSnow,
-            color,
-            min(abs(snowLow - vPosition.z) / snowHigh, 1.0)
-        );
+        // add sand
+            color = mix(
+                diffuseSand,
+                color,
+                min(abs(sandLow - vPosition.z) / sandHigh, 1.0)
+            );
+            // add rock
+            color = mix(
+                diffuseRock,
+                color,
+                min(abs(rockLow - vPosition.z) / rockHigh, 1.0)
+            );
+            // add snow
+            color = mix(
+                diffuseSnow,
+                color,
+                min(abs(snowLow - vPosition.z) / snowHigh, 1.0)
+            );
 
-        //vec4 diffuseShading = texture2D( texture_shading, vUv );
-       //color = mix(
-         //   diffuseShading,
-           // color,
-           // min(abs(.0 - vPosition.z) / 1000.0, 100.0) // Start at 1.3 for .5 units
-       // );
+            //vec4 diffuseShading = texture2D( texture_shading, vUv );
+        //color = mix(
+            //   diffuseShading,
+            // color,
+            // min(abs(.0 - vPosition.z) / 1000.0, 100.0) // Start at 1.3 for .5 units
+        // );
 
-       float fogAmount = 1.0 - exp( -cameraDistance*fogConst );
-       gl_FragColor = vec4(mix( color.rgb, fogColor, fogAmount),color.a);
-    }
-</script>
+        float fogAmount = 1.0 - exp( -cameraDistance*fogConst );
+        gl_FragColor = vec4(mix( color.rgb, fogColor, fogAmount),color.a);
+        }
+    </script>
 
-    <script src="js/three.min.js"></script>
-    <script src="js/physi.js"></script>
-    <script type="text/javascript" src="js/OrbitControls.js"></script>
-    <script type="text/javascript" src="js/PointerLockControls.js"></script>
-    <script type="text/javascript" src="js/FirstPersonControls.js"></script>
-    <script src="bower_components/three.js/examples/js/ImprovedNoise.js"></script>
-    <script type="text/javascript" src="js/game.js"></script>
+ <!-- footer section-->
+ <div id="footerSection"></div>
+ 
+ <script src="js/three.min.js"></script>
+ <script src="js/physi.js"></script>
+ <script type="text/javascript" src="js/OrbitControls.js"></script>
+ <script type="text/javascript" src="js/PointerLockControls.js"></script>
+ <script type="text/javascript" src="js/FirstPersonControls.js"></script>
+ <script src="bower_components/three.js/examples/js/ImprovedNoise.js"></script>
+ <script type="text/javascript" src="js/game.js"></script>
+ <script src="/assets/scripts/script.js"></script>
 </body>
 </html>
