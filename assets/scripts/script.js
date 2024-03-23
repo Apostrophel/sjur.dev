@@ -25,7 +25,7 @@ function loadFooter() {
         })
         .catch(error => console.error('Error fetching included content:', error));
 
-        fetch('/assets/common/navigation.html')
+    fetch('/assets/common/navigation.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('myNavigationBar').innerHTML = html;    
@@ -45,6 +45,14 @@ function loadFooter() {
             });
         })
         .catch(error => console.error('Error fetching included content:', error));
+
+    fetch('/assets/common/header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('headerSection').innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching included content:', error));
+
 }
 
 
@@ -97,3 +105,18 @@ document.getElementById('domain_display').innerHTML = html;
       header.classList.remove('scrollup');
      }
   });
+
+
+  function icon_hover_animation(element, enter, leave){
+    element.addEventListener('mouseenter', enter)
+    element.addEventListener('mouseleave', leave)
+  }
+
+
+  icon_hover_animation(document.querySelector('.icon'), e => {
+    // On hover
+    e.target.classList.add("logo__container--hover")
+  }, e => {
+    // On exit hover
+    e.target.classList.remove("logo__container--hover")
+  })

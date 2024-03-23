@@ -196,12 +196,19 @@
     font-size: 28px;
     cursor: pointer;
 }
-.fa-linkedin:hover, .fa-discord:hover, .fa-whatsapp:hover, .fa-envelope:hover {
+
+.fa-linkedin:hover, .fa-discord:hover, .fa-whatsapp:hover, .fa-envelope:hover, .fa-square-letterboxd:hover, .fa-book:hover, .lb:hover {
     color: var(--primary-theme-color);
+    /*TODO: ADD SCRIPT FOR: fa-beat-fade*/
 }
 .fab {
     color: #000000;
 }
+.fa {
+  color: #000000;
+}
+
+
 /* footer styling */
 #footer {
     background-color: var(--primary-theme-dark);
@@ -308,6 +315,23 @@ i.icon-override:hover{
     border: none;
     cursor: no-drop;
     outline: inherit;
+}
+
+
+.image-card-label-container {
+  position: relative;
+  display: inline-block; /* Ensure container takes up only the space it needs */
+}
+
+.coming-soon {
+  position: absolute;
+  top: 50%; /* Place the label vertically in the middle */
+  left: 50%; /* Place the label horizontally in the middle */
+  transform: translate(-50%, -50%) rotate(-20deg); /* Center the label and rotate it */
+  color: red; /* Change color as needed */
+  font-size: 45px; /* Adjust font size as needed */
+  font-weight: bold; /* Make text bold */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
  /*****************/
