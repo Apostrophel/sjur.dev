@@ -49,7 +49,7 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight); //setSize(window.innerWidth/2, window.innerHeight/2, false) for lavere oppl�sning
 
 //Shadows
-    renderer.shadowMapEnabled = true;
+    renderer.shadowMap.enabled = true;
     renderer.shadowMapSoft = true;
     document.body.appendChild(renderer.domElement);
 
@@ -113,7 +113,7 @@ function init() {
     plane.rotation.x = -Math.PI / 2;
     plane.receiveShadow = true;
     scene.add(plane);
-w
+
 
 
     //HEIGHTMAP
