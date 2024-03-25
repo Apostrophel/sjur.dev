@@ -69,7 +69,9 @@
 } */
 
 
-
+/***************************/
+/* THESIS PROJECT PAGE *****/
+/***************************/
 
 /* thesis hero background image */
 .bgimage_thesis{
@@ -99,6 +101,44 @@
     z-index: 2;
 }
 
+
+
+.master_image {
+  width: 100%;
+}
+
+.underlay{
+  background-size:cover;
+  background-attachment: fixed;
+  position:relative;
+  z-index: -99;
+
+}
+
+
+/* for grid view */
+.grid-container {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  grid-gap: 2%;
+  /* background-color: #fff; */
+  /* color: #444; */
+  margin: 120px;
+}
+
+.grid-box{
+  /* background-color: #444; */
+  /* color: #fff; */
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+/***************************/
+/* THESIS PROJECT PAGE END */
+/***************************/
+
 .bgimage_projects {
   height: 400px;
   background: url('/assets/photography/images/new/thumbnailsjurdev-87.jpg'); /* Adjust the URL accordingly */
@@ -109,13 +149,7 @@
   position: relative;
 }
 
-.underlay{
-    background-size:cover;
-    background-attachment: fixed;
-    position:relative;
-    z-index: -99;
 
-}
 
 /* text css above hero image*/
 .hero_title {
@@ -241,10 +275,8 @@
 }
 
 #mapembed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+ 
+    width: 100%;
 }
 
 .icon {
