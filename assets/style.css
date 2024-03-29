@@ -76,7 +76,7 @@
 /* thesis hero background image */
 .bgimage_thesis{
     height:100vh;
-    background: url('/assets/projects/master/img/vafjorden_from_n2.jpg');
+    background: url('/assets/projects/master/img/vafjorden_from_n2.webp');
     background-size:cover;
     background-attachment: fixed;
     position:relative;
@@ -90,7 +90,7 @@
 }
 .bgimage_thesis_overlay {
     height:100vh;
-    background: url('/assets/projects/master/img/vafjorden_from_n2_overlay.jpg');
+    background: url('/assets/projects/master/img/vafjorden_from_n2_overlay.webp');
     background-size:cover;
     background-attachment: fixed;
     position: relative;
