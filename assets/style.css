@@ -21,7 +21,7 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('/assets/images/main_banner.jpg');
+    background: url('/assets/images/banner_main.webp');
     background-size:cover;
     background-attachment: fixed;
     /* position:relative; */
@@ -143,7 +143,7 @@
 
 .bgimage_projects {
   height: 400px;
-  background: url('/assets/images/project_banner.jpg'); /* Adjust the URL accordingly */
+  background: url('/assets/images/banner_project.webp'); /* Adjust the URL accordingly */
   background-attachment: fixed;
   background-position: center bottom 150px; /* Center horizontally and shift down by 100 pixels */
   background-size: cover; /* Scale the background image to cover the entire container */
