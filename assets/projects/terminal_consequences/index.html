@@ -16,12 +16,8 @@
 </head>
 
 <body onload="loadFooter()">
-    <!-- navigation bar-->
     <div id="myNavigationBar"></div>
- 
-
-            <!-- about section-->
-            <div class="content">
+             <div class="content">
 
                 <div class="grid-container">
                     <div class="grid-box">
@@ -30,8 +26,8 @@
         ▄▄▄▄▄▄▄▄▄▄▄ .▄▄▄  • ▌ ▄ ·. ▪   ▐ ▄  ▄▄▄· ▄▄▌       ▄▄·        ▐ ▄ .▄▄ · ▄▄▄ ..▄▄▄  ▄• ▄▌▄▄▄ . ▐ ▄  ▄▄· ▄▄▄ ..▄▄ ·
         •██  ▀▄.▀·▀▄ █··██ ▐███▪██ •█▌▐█▐█ ▀█ ██•      ▐█ ▌▪▪     •█▌▐█▐█ ▀. ▀▄.▀·▐▀•▀█ █▪██▌▀▄.▀·•█▌▐█▐█ ▌▪▀▄.▀·▐█ ▀.
             ▐█.▪▐▀▀▪▄▐▀▀▄ ▐█ ▌▐▌▐█·▐█·▐█▐▐▌▄█▀▀█ ██▪      ██ ▄▄ ▄█▀▄ ▐█▐▐▌▄▀▀▀█▄▐▀▀▪▄█▌·.█▌█▌▐█▌▐▀▀▪▄▐█▐▐▌██ ▄▄▐▀▀▪▄▄▀▀▀█▄        
-            ▐█▌·▐█▄▄▌▐█•█▌██ ██▌▐█▌▐█▌██▐█▌▐█ ▪▐▌▐█▌▐▌    ▐███▌▐█▌.▐▌██▐█▌▐█▄▪▐█▐█▄▄▌▐█▪▄█·▐█▄█▌▐█▄▄▌██▐█▌▐███▌▐█▄▄▌▐█▄▪▐█        
-            ▀▀▀  ▀▀▀ .▀  ▀▀▀  █▪▀▀▀▀▀▀▀▀ █▪ ▀  ▀ .▀▀▀     ·▀▀▀  ▀█▄▀▪▀▀ █▪ ▀▀▀▀  ▀▀▀ ·▀▀█.  ▀▀▀  ▀▀▀ ▀▀ █▪·▀▀▀  ▀▀▀  ▀▀▀▀                     
+             ▐█▌·▐█▄▄▌▐█•█▌██ ██▌▐█▌▐█▌██▐█▌▐█ ▪▐▌▐█▌▐▌    ▐███▌▐█▌.▐▌██▐█▌▐█▄▪▐█▐█▄▄▌▐█▪▄█·▐█▄█▌▐█▄▄▌██▐█▌▐███▌▐█▄▄▌▐█▄▪▐█        
+              ▀▀▀  ▀▀▀ .▀  ▀▀▀  █▪▀▀▀▀▀▀▀▀ █▪ ▀  ▀ .▀▀▀     ·▀▀▀  ▀█▄▀▪▀▀ █▪ ▀▀▀▀  ▀▀▀ ·▀▀█.  ▀▀▀  ▀▀▀ ▀▀ █▪·▀▀▀  ▀▀▀  ▀▀▀▀                     
                             </pre>
                         </div>
                     </div>
@@ -54,28 +50,32 @@
                                 You can <a class="inline_link" href="https://terminal-6xn7.onrender.com/">click here</a> to test it out. 
                                 <b>Hint: Type <font color="orange">help</font> to get started.</b>
                             </p>
-                            
                             <p>
-                                The general idea is to have user registered in a database and able to chat in a general chatroom lobby.
+                                The general idea is to have user registered in a database and able to chat in a general chatroom.
                                 From there, users can create a game lobby, and invite other users to join their game. The users can then start a story together
-                                and roleplay as their characters. At the start of the game
+                                and roleplay as their characters. At the start of the game a murder takes place. It's up to the characters to investigate. 
                             </p>
-
-
                         </div>
                     </div>
                     <div class="grid-container">
                         <div class="grid-box">
                             <h1>Architecture</h1>
                             <p>       
-                                The web application is written in javascript with Node js, express, socketio... //TODO: write more!
-                            <p></p>
-                               The terminal interface is provided with an open source library called <a class="inline_link" href="https://terminal.jcubic.pl/"> jquery-terminal </a>. 
-                               The library provides the oppertunity to define commands and some cool terminal features like command history and tab-autocomplete. 
+                                The web application is written in javascript with Node.js and Express. For real time communication, the Socket.IO libary is 
+                                used. 
+                            </p>
+                            <p>
+                                For the user database and chatroom history, mySql is used. The database is hosted on another free service. Hopefully i remember to to click
+                                the reactivation link every week...
+                            </p>
+                            </p>
+                                The terminal interface is provided with an open source library called <a class="inline_link" href="https://terminal.jcubic.pl/"> jquery-terminal </a>. 
+                                The library provides the oppertunity to define commands and some cool terminal features like command history and tab-autocomplete. 
                             </p>
 
                             <p> 
-                                Code is available on <a class="inline_link" href="https://github.com/Apostrophel/Terminal-Consequences"> github </a>. 
+                                I've had tons of fun planning and coding on the project so far. It is very enjoyable to see when the server, client and database 
+                                all works together. Hopefully I'll add more features soon, and actually implement a working game. All the code is available on <a class="inline_link" href="https://github.com/Apostrophel/Terminal-Consequences"> github</a>. 
                             </p>
                         </div>
                         <div class="grid-box">
