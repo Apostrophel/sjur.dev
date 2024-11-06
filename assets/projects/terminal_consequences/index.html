@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sjur B. | Glaciologist</title>
+  <meta charset="utf-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="/assets/style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <!--<script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>-->
+  <script src="https://kit.fontawesome.com/f4bff98f20.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="loadFooter()">
+    <!-- navigation bar-->
+    <div id="myNavigationBar"></div>
+ 
+
+            <!-- about section-->
+            <div class="content">
+
+                <section id="description">
+                    <div class="grid-container">
+                        <div class="grid-box">
+                            <img src="/assets/projects/terminal_consequences/img/tq_banner.png" class= "master_image" alt="Map of the veafjorden domain">
+                            <p class="figtext"><b>Figure 1.</b> The Veafjorden Domain, Western Norway. </p>
+                        </div>
+                        <div class="grid-box">
+                            <p>       
+                                Around twenty thousand years ago, during the last glacial maximum, Norway was completely glaciated. An enormous ice sheet covered Scandinavia and reached most of Northern Europe. The Scandinavian ice sheet was much larger than the 
+                                ice sheet covering Greenland today, but similar in many ways. As global warming increases, it is vital to understand how large scale ice sheets reacts, moves and flows. It is of special importance to understand how accurate our models and predictions can be. What will Greenland look like after decades and centuries of a warming planet? Studying the Scandinavian Ice Sheet at, and after it's maxima, can be crucial for understanding climate change and the Greenland Ice Sheet. 
+
+                            <p></p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <div class="grid-box">
+                            <p>       
+                                Veafjorden (<b>Fig. 1</b>), located in Western Norway, just outside Bergen, has provided a small puzzle for glaciologist. 
+                                The bare rock surfaces on the plateaus around show striations perpendicular to the orientation of the fjord below. The striations indicate that
+                                ice has moved across the thousand-meter deep through, almost at a 90° degree angle! The question is, what happens to
+                                the ice in such a setting? Does it stagnate? Will it slow down? By investigating a small section of the Scandinavian 
+                                ice sheet, this project aims to gain a deeper understanding of how ice flows over deep fjords and rough terrain. 
+                            <p></p>
+                                In <b>Fig. 2</b> some interesting results of the simulations can be seen. Eddy formations spanning the entire fjord creates circular and lateral movement of ice at the location. 
+                            </p>
+                        </div>
+                        <div class="grid-box">
+                            <img src="/assets/projects/terminal_consequences/img/tq_second.png" class= "master_image" alt="Map of the veafjorden domain">
+                            <p class="figtext"> <b>Figure 2.</b> Result of perpendicular ice motion across Veafjorden. Large Moffat eddies form, transporting ice laterally along the fjord.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-container">
+                        <div class="grid-box">
+                            <img src="/assets/projects/master/img/Greenland_velthick_landcape_v3.webp" class= "master_image" alt="Map of the veafjorden domain">
+                            <p class="figtext"> <b>Figure 3.</b> Similar settings in Greenland. The black contour lines show surface velocities of 450 ma⁻¹ (solid) and 850 ma⁻¹ (dashed). Regions where contour lines intersect the orange ice thickness indicator, is similar to Veafjorden.</p>
+                        </div>
+                        <div class="grid-box">
+                            <p>       
+                                Similar settings likely exist in Greenland today (<b>Fig. 3</b>), but the topography is hidden under thick ice. Several places close to the Greenland coast have the same surface velocity and ice thickness as that of the Veafjorden domain.  
+                            </p>
+                            <p>       
+                                The most intriguing results are the patterns of flow. In nearly every perpendicular simulation, Veafjorden displays spiralling swirls of slow-moving ice. Deep in the fjord ice movement is very slow and shows a huge, spiral of ice, moving up and down along the fjord. Ice from along the plateau base, sinks into the deepest part of the fjord, slowing down almost to a halt. Another related key finding is how much the ice motions slows down the ice sheet in the area around the fjord. 
+                            <p>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <div class="grid-box">
+</p>
+                                I immensely enjoyed working on ice sheet modelling and a paper is currently being prepared to further improve the project and publish the material. Have a look around the fjord from above!
+                            <p style="text-align: left; margin-top: 50px;">
+                                - Sjur B.
+                            </p>
+                            </p>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="grid-box">
+                            <!--Embedded map-->
+                            <div id="mapembed">
+                                <iframe src="https://www.google.com/maps/embed?pb=!4v1710407420868!6m8!1m7!1sCAoSLEFGMVFpcE1CRVJHYmpBNzZ6VWtweHFEYXhpWXkzcV9iaF9LV1M2MzcyYl9L!2m2!1d60.51758330000001!2d5.6895867!3f318.4236490087547!4f-21.539309747506564!5f0.7820865974627469" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <p class="figtext"> An overview of Vefjorden.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </section>
+            </div>
+
+
+        
+        
+
+    <!-- footer section-->
+    <div id="footerSection"></div>
+
+</div>
+
+    <script src="/assets/scripts/script.js"></script>
+
+    <script>
+        var banner = document.querySelectorAll('.banner')[1]; // Select the second banner
+        var bannerHeight = banner.offsetHeight;
+        var windowHeight = window.innerHeight;
+    
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+    
+            if (scrollPosition >= bannerHeight - windowHeight) {
+                var opacity = (scrollPosition - (bannerHeight - windowHeight)) / windowHeight;
+                banner.style.opacity = opacity;
+                
+            } else {
+                banner.style.opacity = 0;
+               
+            }
+
+            //if (scrollPosition > bannerHeight + windowHeight)
+                //banner.style.position = "relative";
+               
+                //banner.style.height = "100vh";
+            
+            }
+        );
+    </script>
+    
+
+</body>
