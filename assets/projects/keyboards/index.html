@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sjur B. | Glaciologist</title>
+  <meta charset="utf-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="/assets/style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <!--<script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>-->
+  <script src="https://kit.fontawesome.com/f4bff98f20.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="loadFooter()">
+    <div id="myNavigationBar"></div>
+             <div class="content">
+
+                <div class="grid-container">
+                    <div class="grid-box">
+                        <div class="ascii-art">
+                             <pre>
+ ▗▄▄▖▗▄▄▖ ▗▖   ▗▄▄▄▖▗▄▄▄▖     ▗▖  ▗▖▗▄▄▄▖ ▗▄▄▖▗▖ ▗▖ ▗▄▖ ▗▖  ▗▖▗▄▄▄▖ ▗▄▄▖ ▗▄▖ ▗▖       ▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖▗▄▄▖  ▗▄▖  ▗▄▖ ▗▄▄▖ ▗▄▄▄  ▗▄▄▖    
+▐▌   ▐▌ ▐▌▐▌     █    █       ▐▛▚▞▜▌▐▌   ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▛▚▖▐▌  █  ▐▌   ▐▌ ▐▌▐▌       ▐▌▗▞▘▐▌    ▝▚▞▘ ▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌  █▐▌       
+ ▝▀▚▖▐▛▀▘ ▐▌     █    █       ▐▌  ▐▌▐▛▀▀▘▐▌   ▐▛▀▜▌▐▛▀▜▌▐▌ ▝▜▌  █  ▐▌   ▐▛▀▜▌▐▌       ▐▛▚▖ ▐▛▀▀▘  ▐▌  ▐▛▀▚▖▐▌ ▐▌▐▛▀▜▌▐▛▀▚▖▐▌  █ ▝▀▚▖    
+▗▄▄▞▘▐▌   ▐▙▄▄▖▗▄█▄▖  █       ▐▌  ▐▌▐▙▄▄▖▝▚▄▄▖▐▌ ▐▌▐▌ ▐▌▐▌  ▐▌▗▄█▄▖▝▚▄▄▖▐▌ ▐▌▐▙▄▄▖    ▐▌ ▐▌▐▙▄▄▖  ▐▌  ▐▙▄▞▘▝▚▄▞▘▐▌ ▐▌▐▌ ▐▌▐▙▄▄▀▗▄▄▞▘    
+                             </pre>
+                        </div>
+                    </div>
+                </div>
+                <section id="description">
+                    <div class="grid-container">
+                        <div class="grid-box">
+                            <img src="/assets/projects/keyboards/img/sofle_build_hand.jpeg" class= "master_image" alt="My keyboard!">
+                            <p class="figtext"><b>Figure 1.</b> My first split keyboard build!</p>
+                        </div>
+                        <div class="grid-box">
+                            <p>       
+                            As I recently got deeper into writing (and maybe more crusually: <i>typing</i>), I also got into writing devices. Mechanical keyboards
+                            may be great, but do you know what's even more great? <i>~Split~</i> mechanical keyboards! I didn't even know these things existed, and by now I'm 
+                            pretty deep in the rabbit hole. As a consequence, I also learned manual soldering, use of microcontrollers, a little PCB design, 
+                            and of course... writing in VIM. One of the key motivations for this journey was my senseless desire to write fast. A dear friend 
+                            can type more than 100 words per minute (WPM). And I have now spent two years of my life trying to beat her.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <div class="grid-box">
+                            <h2>The first experiment</h2>
+                            <p> 
+                            Inexperienced and ready for anything, I went all out. I got the full <i>Aurora Sofle v2</i> kit (Fig. 1), opting for 
+                            the lucrative <b>wireless</b> microcontroller nice!nano. All I had to do was 
+                            assemble and <a class="inline_link" href="https://zmk.dev/">ZMK</a> 
+                            could build the firmware and flash the board via GitHub actions. It all sounded nice and smooth.
+                            </p>
+                            <p>When the parts arrived my handy dad helped me with my first ever solder. Tiny diodes, transistors, 
+                            sockets and other things I hadn't seen before, all went on the pcb. The keyboard halves came together. And then I tried typing. 
+                            </p>
+                        </div>
+                        <div class="grid-box">
+                            <img src="/assets/projects/keyboards/img/dasbob_left.jpg" class= "master_image" alt="My Dasbob Keyboard Build. It's pink!">
+                            <p class="figtext"> <b>Figure 2.</b> My second split keyboard build.</p>
+                        </div>
+                    </div>
+                     <div class="grid-container">
+                        <div class="grid-box">
+                            <h2>My first word</h2>
+                            <p>
+                            At some point in the research process I had discovered that
+                            to type faster, some builders choose mechanical switches with the lowest possible
+                            actuation weight. I had to beat my friend of course, so I got the Khail Chock Pink with 20g of required force. For reference,
+                            the average keyboard actuation force is around 50-70g...
+                            With the pinks, just the slightest touch is enough to activate a key.
+                            </p>
+                            <p>
+                            The fool I am, I also lubed the internal components of each
+                            switch, in an effort to silence the keyboard for office use. This made it even lighter to the touch. In the end, every key on my new 
+                            build was working, but I could not type a single word. I kept accidentally hitting other keys when i rested my finger 
+                            tips on the keyboard. After a grueling week of practice, I was up to a whopping 13 WPM. A bit shy of my friends score...
+                            </p>
+                        </div>
+                        <div class="grid-box">
+                            <img src="/assets/projects/keyboards/img/sofle_monkey.jpg" class= "master_image" alt="Map of the veafjorden domain">
+                            <p class="figtext"> <b>Figure 3.</b> The first typing experience.</p>
+                        </div>
+                    </div>                   
+                    <div class="grid-container">
+                        <div class="grid-box" style="grid-column: 1 / -1; max-width: 50%; margin: 0 auto;">
+                            <h2>The second build</h2>
+                            <p>
+                            I got better eventually though, and I started to understand the power of a smaller keyboard. I wanted to build again. 
+                            By now I had more experience and a better idea for what I actually needed. Who needs a number row when you can just 
+                            change layers? Who needs <i>dedicated</i> CTRL, SHIFT, DELETE keys when you can place them <i>right</i> on the letter keys with 
+                            hold-tap modifiers? Also, the fewer keys you have, the less you have to reach. All for the WPM's.
+                            </p>
+                            <p>
+                            I got a 36-key layout this time. Just the letter-keys, and 3-thumb cluster keys per hand (Fig. 2). That should do it.
+                            The key map layout is also very important of course. I have made mine personal, inspired by many a config in the
+                            split board community. My current layout is defined 
+                            in <a class="inline_link" href="https://github.com/Apostrophel/qmk-dasbob-lindos">github repository</a>. It's based on 
+                            "home row mods" and combo keys. Home row mods are a way of changing the functionality of the normal `asdf`-keys. When 
+                            I hold down my `f`-key, it acts as CTRL. 
+                            </p>
+                            <p>
+                            Despite all this wonderful work and research. I still can't type 100 WPM (not even close). But I'll keep practicing. Maybe one day. 
+                            </p>
+                        </div>
+                    </div>
+              <section id="gallery">
+                  <div class="gallery-strip">
+                      <div class="gallery-item">
+                          <img src="/assets/projects/keyboards/img/dasbob_build_1.jpg" class="gallery-image" alt="Gallery image 1">
+                      </div>
+                      <div class="gallery-item">
+                          <img src="/assets/projects/keyboards/img/dasbob_build_2.jpg" class="gallery-image" alt="Gallery image 2">
+                      </div>
+                      <div class="gallery-item">
+                          <img src="/assets/projects/keyboards/img/dasbob_free_sofle.jpeg" class="gallery-image" alt="Gallery image 3">
+                      </div>
+                      <div class="gallery-item">
+                          <img src="/assets/projects/keyboards/img/dasbob_build_1.jpg" class="gallery-image" alt="Gallery image 4">
+                      </div>
+                      <div class="gallery-item">
+                          <img src="/assets/projects/keyboards/img/dasbob_left.jpg" class="gallery-image" alt="Gallery image 5">
+                      </div>
+                      <div class="gallery-item">
+                          <img src="/assets/projects/keyboards/img/dasbob_use.jpeg" class="gallery-image" alt="Gallery image 6">
+                      </div>
+                  </div>
+              </section>
+
+    <!-- footer section-->
+    <div id="footerSection"></div>
+
+</div>
+
+    <script src="/assets/scripts/script.js"></script>
+
+    <script>
+        var banner = document.querySelectorAll('.banner')[1]; // Select the second banner
+        var bannerHeight = banner.offsetHeight;
+        var windowHeight = window.innerHeight;
+    
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+    
+            if (scrollPosition >= bannerHeight - windowHeight) {
+                var opacity = (scrollPosition - (bannerHeight - windowHeight)) / windowHeight;
+                banner.style.opacity = opacity;
+                
+            } else {
+                banner.style.opacity = 0;
+               
+            }
+
+            //if (scrollPosition > bannerHeight + windowHeight)
+                //banner.style.position = "relative";
+               
+                //banner.style.height = "100vh";
+            
+            }
+        );
+    </script>
+    
+
+</body>
