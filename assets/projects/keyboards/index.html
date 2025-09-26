@@ -57,7 +57,7 @@
                             could build the firmware and flash the board via GitHub actions. It all sounded nice and smooth.
                             </p>
                             <p>When the parts arrived my handy dad helped me with my first ever solder. Tiny diodes, transistors, 
-                            sockets and other things I hadn't seen before, all went on the pcb. The keyboard halves came together. And then I tried typing. 
+                            sockets and other things I hadn't seen before, all went on the PCB. The keyboard halves came together. And then I tried typing. 
                             </p>
                         </div>
                         <div class="grid-box">
@@ -76,7 +76,7 @@
                             With the pinks, just the slightest touch is enough to activate a key.
                             </p>
                             <p>
-                            The fool I am, I also lubed the internal components of each
+                            The fool I am, I also lubricated the internal components of each
                             switch, in an effort to silence the keyboard for office use. This made it even lighter to the touch. In the end, every key on my new 
                             build was working, but I could not type a single word. I kept accidentally hitting other keys when i rested my finger 
                             tips on the keyboard. After a grueling week of practice, I was up to a whopping 13 WPM. A bit shy of my friends score...
@@ -98,6 +98,20 @@
                             </p>
                             <p>
                             I got a 36-key layout this time. Just the letter-keys, and 3-thumb cluster keys per hand (Fig. 2). That should do it.
+                            Soldering went faster. Assembly went faster. But, when i tested the keys. The letter 'h' didn't work. Heck! We tested
+                            the microcontroller, we tested the switch, we even tested if the PCB had a connection between the switch socket and
+                            the placement of the microcontroller. Everything seemed fine, except that the button didn't work...
+                            Eventually we got it. An easy fix: 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                      <img src="/assets/projects/keyboards/img/dasbob_hotwire.jpg" class="master_image" alt="Microcontroller hotwire.">
+                      <p class="figtext"> <b>Figure 4.</b> The fix.</p>
+                    </div>
+                     <div class="grid-container">
+                        <div class="grid-box" style="grid-column: 1 / -1; max-width: 50%; margin: 0 auto;">
+                            <p>
                             The key map layout is also very important of course. I have made mine personal, inspired by many a config in the
                             split board community. My current layout is defined 
                             in <a class="inline_link" href="https://github.com/Apostrophel/qmk-dasbob-lindos">github repository</a>. It's based on 
