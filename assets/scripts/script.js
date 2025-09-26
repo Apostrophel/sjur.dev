@@ -93,4 +93,76 @@ togglePanelButton.addEventListener('click', () => {
 
 
 //for master thesis scroll 
+
+
+// Device Detection Utilities
+const DeviceDetector = {
+    // Check if device is mobile
+    isMobile: () => {
+        return window.innerWidth <= 576;
+    },
+    
+    // Check if device is tablet
+    isTablet: () => {
+        return window.innerWidth > 576 && window.innerWidth <= 992;
+    },
+    
+    // Check if device is desktop
+    isDesktop: () => {
+        return window.innerWidth > 992;
+    },
+    
+    // Check if device supports touch
+    isTouchDevice: () => {
+        return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    },
+    
+    // Get current screen size category
+    getScreenSize: () => {
+        const width = window.innerWidth;
+        if (width <= 576) return 'mobile';
+        if (width <= 768) return 'small-tablet';
+        if (width <= 992) return 'tablet';
+        return 'desktop';
+    },
+    
+    // Add responsive classes to body
+    addResponsiveClasses: () => {
+        const body = document.body;
+        body.classList.remove('mobile', 'tablet', 'desktop', 'touch-device');
+        
+        if (DeviceDetector.isMobile()) {
+            body.classList.add('mobile');
+        } else if (DeviceDetector.isTablet()) {
+            body.classList.add('tablet');
+        } else {
+            body.classList.add('desktop');
+        }
+        
+        if (DeviceDetector.isTouchDevice()) {
+            body.classList.add('touch-device');
+        }
+    }
+};
+
+// Initialize responsive classes on load
+window.addEventListener('load', () => {
+    DeviceDetector.addResponsiveClasses();
+});
+
+// Update classes on window resize
+window.addEventListener('resize', () => {
+    DeviceDetector.addResponsiveClasses();
+});
+
+// Mobile-specific optimizations
+if (DeviceDetector.isMobile()) {
+    // Disable background-attachment: fixed on mobile for better performance
+    window.addEventListener('load', () => {
+        const heroSections = document.querySelectorAll('.bgimage, .bgimage_projects, .bgimage_thesis');
+        heroSections.forEach(section => {
+            section.style.backgroundAttachment = 'scroll';
+        });
+    });
+}
  

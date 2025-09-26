@@ -609,14 +609,202 @@ button.roundButton:active{
     display: block !important;
 }
 
-/* Responsive adjustments */
+/* RESPONSIVE DESIGN - MOBILE FIRST APPROACH */
+
+/* Mobile devices (up to 576px) */
+@media (max-width: 576px) {
+    /* Typography adjustments for mobile */
+    .hero_title, .portfolio-title {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero_desc {
+        font-size: 1.2rem !important;
+    }
+    
+    /* Grid layout - single column on mobile */
+    .grid-container {
+        grid-template-columns: 1fr !important;
+        margin: 20px !important;
+        grid-gap: 20px;
+    }
+    
+    .grid-box {
+        padding: 15px !important;
+        font-size: 100% !important;
+    }
+    
+    /* ASCII art scaling */
+    .ascii-art {
+        font-size: 0.3rem;
+        overflow-x: auto;
+    }
+    
+    /* Background images - remove fixed attachment on mobile */
+    .bgimage, .bgimage_projects, .bgimage_thesis {
+        background-attachment: scroll !important;
+        height: 50vh;
+    }
+    
+    /* Service cards height adjustment */
+    .servicesText.card {
+        height: auto !important;
+        min-height: 200px;
+    }
+    
+    /* Navigation and spacing adjustments */
+    #about, #portfolio_links, #portfolio, #skills, #portfolio_personal, #contact {
+        margin-top: 2rem !important;
+        padding-top: 2rem !important;
+    }
+    
+    /* Image gallery mobile improvements */
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+    
+    /* Side panel full width on mobile */
+    #sidePanel {
+        width: 90% !important;
+        left: -90% !important;
+    }
+    
+    .gallery-pushed {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        margin-left: 90% !important;
+    }
+    
+    .toggleButtonToggled {
+        left: 85% !important;
+    }
+}
+
+/* Small tablets (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .hero_title, .portfolio-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero_desc {
+        font-size: 1.5rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 40px;
+    }
+    
+    .ascii-art {
+        font-size: 0.5rem;
+    }
+    
+    .bgimage, .bgimage_projects, .bgimage_thesis {
+        background-attachment: scroll;
+        height: 60vh;
+    }
+}
+
+/* Medium tablets (769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .grid-container {
+        margin: 60px;
+    }
+    
+    .ascii-art {
+        font-size: 0.7rem;
+    }
+}
+
+/* Large screens (993px and up) - default styles apply */
+@media (min-width: 993px) {
+    /* Ensure fixed backgrounds work on larger screens */
+    .bgimage, .bgimage_projects, .bgimage_thesis {
+        background-attachment: fixed;
+    }
+}
+
+/* Gallery strip responsive adjustments */
 @media (max-width: 768px) {
     .gallery-strip {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 10px;
+        margin: 20px auto 0;
+        padding: 10px;
     }
     
     .gallery-image {
         height: 150px;
     }
+}
+
+/* JavaScript-based responsive classes */
+body.mobile .hide-mobile {
+    display: none !important;
+}
+
+body.tablet .hide-tablet {
+    display: none !important;
+}
+
+body.desktop .hide-desktop {
+    display: none !important;
+}
+
+body.mobile .show-mobile-only {
+    display: block !important;
+}
+
+body.tablet .show-tablet-only {
+    display: block !important;
+}
+
+body.desktop .show-desktop-only {
+    display: block !important;
+}
+
+/* Touch device specific styles */
+body.touch-device .hover-effect:hover {
+    /* Disable hover effects on touch devices */
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Mobile navigation improvements */
+body.mobile .navbar-nav {
+    text-align: center;
+}
+
+body.mobile .navbar-nav .nav-link {
+    padding: 15px 0 !important;
+    font-size: 1.1rem;
+}
+
+/* Mobile-optimized button sizes */
+body.mobile button, 
+body.mobile .btn {
+    min-height: 44px; /* Apple's recommended touch target size */
+    padding: 12px 20px;
+}
+
+/* Improve readability on mobile */
+body.mobile p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+body.mobile h1 {
+    font-size: 1.8rem;
+}
+
+body.mobile h2 {
+    font-size: 1.5rem;
+}
+
+body.mobile h3 {
+    font-size: 1.3rem;
+}
+
+body.mobile h4 {
+    font-size: 1.1rem;
 }
